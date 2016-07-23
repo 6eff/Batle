@@ -4,4 +4,9 @@
 <input type="submit" value="switch" >
 </form>
 <%= @game.player1.name %> <%= @game.player1.hp %> vs <%= @game.player2.name %> <%= @game.player2.hp %>
-<br><a href="/attack">Attack</a>
+<br>
+
+<form action="/attack" method="post">
+  <input type="submit" value="Attack">
+</form>
+<!-- <a href="/attack">Attack</a> -->
